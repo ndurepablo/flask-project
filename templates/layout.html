@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+ 
+    <title>{% block title%}
+
+        {% endblock %}
+    </title>
+</head>
+
+<body>
+    <header>
+
+        <div id='logotipo'>
+            <img src="{{url_for('static', filename='img/py.png')}}">
+            <h1>Proyecto Flask</h1>
+
+        </div>
+
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="{{ url_for('index') }}">Inicio</a>
+            </li>
+            <li>
+                <a href="{{ url_for('create_car') }}">Crear auto</a>
+            </li>
+            <li>
+                <a href="{{ url_for('cars') }}">Autos</a>
+            </li>
+            <li>
+                <a href="{{ url_for('info') }}">Información</a>
+            </li>
+            <li>
+                <a href="{{ url_for('contact') }}">Contacto</a>
+            </li>
+            <li>
+                <a href="{{ url_for('languages') }}">Lenguajes</a>
+            </li>
+            <li>
+                <a href="{{ url_for('about') }}">Sobre nosotros</a>
+            </li>
+        </ul>
+    </nav>
+    <div class='navbar'>
+        <span class='left-corner'></span>
+        <span class='nav-refill'></span>
+        <span class='right-corner'></span>
+
+    </div>
+
+    <div id='content'>
+        <div class='box'>
+            {% block content%}
+            {% endblock %}
+
+        </div>
+
+    </div>
+    <footer>
+        Creado por Pablo N'Duré -  {{now.month}} - {{now.year}}
+    </footer>
+</body>
+
+</html>

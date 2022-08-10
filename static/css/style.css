@@ -1,0 +1,335 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, Arial, Helvetica;
+    text-decoration: none;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+header{
+    width: 1212px;
+    height: 140px;
+    background-color: #23282B;
+    margin: 0 auto;
+}
+
+#logotipo{
+    width: 40%;
+    height: 130px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#logotipo img{
+    display: block;
+    width: 60px;
+    float: left;
+    margin-top: 20px;
+}
+
+#logotipo h1{
+    display: block;
+    float: left;
+    margin-top: 35px;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #2ba977;
+}
+
+.clear{
+    clear: both;
+    float: none;
+}
+
+/* Menu */
+
+nav{
+    width: 1250px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #1B1E1F;
+    border: 1px solid #333333;
+    box-shadow: 0px 22px 22px gray;
+    font-size: 15px;
+}
+nav > ul{
+    list-style: none;
+    text-decoration: none;
+}
+nav > ul > li{
+    line-height: 40px;
+    float: left
+}
+nav > ul > li > a{
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+}
+/* Menu deplegable */
+nav > ul > li > ul{
+    display: none;
+    position: absolute;
+    color: white;
+    text-align: left;
+    width: 160px;
+    box-shadow: 0px 2px 2px gray;
+}
+
+nav > ul > li:hover > ul{
+    display: block;
+    color: white;
+    margin: 0px;
+    list-style: none;
+}
+
+nav > ul > li:hover > ul > li{
+    background-color: #F2F1F0;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 13px;
+    transition: all 300ms
+}
+
+nav > ul > li:hover > ul > li > a{
+    color: #666;
+}
+
+nav > ul > li:hover > ul > li:hover{
+    background-color: #2ba977;
+}
+
+nav > ul > li:hover > ul > li:hover > {
+    color: white;
+}
+/* enlaces */
+nav > ul > li > a:hover{
+    background-color: #2ba977;
+    box-shadow: 0px 0px 5px #444 inset;
+    color: white;
+    transition: all 300ms;
+}
+.navbar{
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.left-corner{
+    display: block;
+    border-left: 20px solid transparent;
+    border-top: 10px solid #2B2F30;
+    float: left
+}
+.right-corner{
+    display: block;
+    border-right: 20px solid transparent;
+    border-top: 10px solid #2B2F30;
+    float: right
+}
+.nav-refill{
+    display: block;
+    width: 1210px;
+    height: 10px;
+    background-color: #2B2F30;
+    float: left;
+}
+
+/* Contenido */
+.content{
+    line-height: 25px;
+}
+span.date{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: gray;    
+}
+
+
+
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+ol, ul{
+    margin-left: 25px;
+}
+
+
+#content{
+    width: 1212px;
+    min-height: 930px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.box{
+    background: white;
+    width: 95%;
+    min-height: 930px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    margin: 0 auto;
+}
+
+.box .image{
+    width: 45%;
+    float: left;
+    margin-right: 40px;
+}
+.box .image img{
+    width: 100%;
+}
+
+.box a {
+    color: #444;
+    transition: all 100ms;
+
+}
+
+.box a:hover {
+    transition: all 100ms;
+    color:#1f7e58;
+}
+
+.box form{
+    width: 40%
+}
+
+.box form input,
+.box form label{
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    
+}
+
+.box form input[type="text"],
+.box form input[type="email"],
+.box form input[type="password"],
+.box form textarea{
+    width: 100%;
+    padding: 5px;
+}
+
+.box form select{
+    width: 100px;
+    padding: 5px;
+}
+
+.box form input[type="submit"],
+.box form input[type="button"],
+.box form button{
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #444;
+    background: #2ba977;
+    color: white;
+    transition: 300ms all;
+    cursor: pointer;
+}
+
+.box form input[type="submit"]:hover,
+.box form input[type="button"]:hover,
+.box form button:hover{
+    background: #1f7e58;
+    color: white;
+}
+.title{
+    color: #444;
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+
+.message,
+.alert-success{
+    padding: 20px;
+    background: #1f7e58;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.alert-warning{
+    padding: 20px;
+    background: #971818;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.article-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    clear: both;
+}
+
+.article-item .image{
+    width: 200px;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+}
+
+.article-item .image img{
+    height: 200px;
+}
+
+.article-item .data{
+    float: left;
+    padding: 15px;
+}
+
+.article-item h2{
+    display: block;
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.article-item span.date{
+    display: block;
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.btn{
+    padding: 10px;
+    background: rgb(239, 5, 5);
+    color: white !important;
+    border: 1px solid black;
+    display: block;
+    margin-top: 20px;
+    width: 100px;
+    text-align: center;
+}
+.btn-edit{
+    background: #1f7e58;
+}
+
+
+/* Footer */
+footer{
+    width: 1250px;
+    background-color: #1B1E1F;
+    border: 1px solid #333;
+    color: #d1d4d6;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 20px gray;
+}
